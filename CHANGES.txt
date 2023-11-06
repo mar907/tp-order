@@ -1,0 +1,4 @@
+*-Ver diagrama de clases UML en el directorio model
+    1-Si bien Order ahora depende de las abstracciones de Customer y Article a través de sus interfaces, Order es una clase concreta y no se podrían reemplazar diferentes por diferentes Orders (Pedidos) en un futuro, principalmente si una aplicación debe manejarse con diferentes tipos de ordenes, incluso quizá debería usarse un adaptador para estas ordenes concretas. Si nos remitimos a lo que dice el principio de inversión de dependencias de Robert C. Martin:
+        A: Los módulos de alto nivel no deberían depender de los de bajo nivel. Ambos deberían depender de abstracciones.
+        B: Las abstracciones no deberían depender de los detalles. Son los detalles los que deberían depender de abstracciones.
